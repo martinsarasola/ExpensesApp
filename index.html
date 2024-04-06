@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses APP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main class="container">
+        <div class="expenses-container">
+            <div class="title">
+                <h1 class="main-title">Expenses APP</h1>
+            </div>
+            <h2 class="newtransaction">New Transaction</h2>
+            <div class="details">
+                <div class="description-container">
+                    <h3>Description</h3>
+                    <input type="text" class="description">
+                </div>
+                <div class="amount-container">
+                    <h3>Amount</h3>
+                    <input type="number" class="amount" placeholder="$">
+                </div>
+                <div class="date-container">
+                    <h3>Date</h3>
+                <input type="datetime-local" max="9999-12-31T23:59" class="date">
+                </div>
+            </div>
+            <button name="button" type="menu" class="insert"><h3>Insert transaction</h3></button>
+        </div>
+    </main>
+    <div class="todaytransactions">
+        <h2 class="title-today">Today transactions</h1>
+            <h3 class="notransactions">no transactions</h3>
+            <div class="transactions">
+                <table class="expensesTable">
+                    <tr>
+                        <th class="headerTime">Time</th>
+                        <th class="headerDescription">Description</th>
+                        <th class="headerAmount">Amount</th>
+                        <th class="headerDelete"></th>
+                    </tr>
+                </table>
+            </div>
+        <div class="total-container">
+            <div class="h2-container">
+                <h3 class="total-h2">Total: <span class="total">$0</span></h3>    
+            </div>
+        </div>
+    </div>
+    <h2 class="history-title">History</h1>
+    <div class="history">
+            <div class="historyTransactions">
+                <table class="historyExpensesTable">
+                    <tr>
+                        <th class="headerTime">Date</th>
+                        <th class="headerDescription">Description</th>
+                        <th class="headerAmount">Amount</th>
+                        <th class="headerDelete"></th>
+                    </tr>
+                    <tr class="tdhistory">
+                    </tr>
+                </table>
+            </div>
+            <div class="total-container">
+                <div class="h2-container">
+                    <h3 class="total-h2">Total: <span class="history-total">$0</span></h3>    
+                </div>
+            </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
